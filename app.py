@@ -12,7 +12,7 @@ import pandas as pd
 from datetime import date, timedelta
 
 app = dash.Dash()
-'https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info2020-04-21.csv'
+
 # Import data
 yesterday = date.today() - timedelta(days=1)
 filename = 'https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info' + str(yesterday) + '.csv'
@@ -128,8 +128,3 @@ def create_figure(hover_data, y_axis_type):
 
 if __name__ == '__main__':
     app.run_server(debug=False)
-
-
-
-
-    
