@@ -14,6 +14,8 @@ from datetime import date, timedelta
 app = dash.Dash()
 
 # Import data
+#https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info2020-04-21.csv
+
 yesterday = date.today() - timedelta(days=1)
 filename = 'https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info' + str(yesterday) + '.csv'
 
