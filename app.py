@@ -5,6 +5,7 @@ Created on Tue Apr 21 15:41:27 2020
 @author: santi
 """
 import dash
+import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
