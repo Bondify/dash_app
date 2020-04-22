@@ -12,13 +12,13 @@ import plotly.graph_objs as go
 import pandas as pd
 from datetime import date, timedelta
 
+app = dash.Dash()
+server = app.server
+
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = {
     'example@remix.com': 'janejacobs'
 }
-
-app = dash.Dash()
-server = app.server
 
 auth = dash_auth.BasicAuth(
     app,
