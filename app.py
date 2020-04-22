@@ -16,14 +16,13 @@ VALID_USERNAME_PASSWORD_PAIRS = {
     'example@remix.com': 'janejacobs'
 }
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash()
+server = app.server
+
 auth = dash_auth.BasicAuth(
     app,
     VALID_USERNAME_PASSWORD_PAIRS
 )
-
-app = dash.Dash()
-server = app.server
 
 # Import data
 #https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info2020-04-21.csv
