@@ -127,7 +127,7 @@ def create_figure(hover_data, y_axis_type):
     return fig    
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 
