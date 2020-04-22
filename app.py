@@ -13,17 +13,17 @@ import pandas as pd
 from datetime import date, timedelta
 
 # Keep this out of source code repository - save in a file or a database
-VALID_USERNAME_PASSWORD_PAIRS = {
-    'example@remix.com': 'janejacobs'
-}
+#VALID_USERNAME_PASSWORD_PAIRS = {
+#    'example@remix.com': 'janejacobs'
+#}
 
 app = dash.Dash()
 server = app.server
 
-auth = dash_auth.BasicAuth(
-    app,
-    VALID_USERNAME_PASSWORD_PAIRS
-)
+#auth = dash_auth.BasicAuth(
+#    app,
+#    VALID_USERNAME_PASSWORD_PAIRS
+#)
 
 # Import data
 #https://raw.githubusercontent.com/Bondify/dash_app/master/worldmeter/info2020-04-21.csv
